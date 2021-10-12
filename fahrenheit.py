@@ -12,8 +12,8 @@ def fahrenheit():
 
     # process & output
     try:
-        celcius_temp = int(celcius_temp)
-        fahrenheit_temp = round((9 / 5) * celcius_temp + 32, 2)
+        celcius_temp = float(celcius_temp)
+        fahrenheit_temp = round((9 / 5) * celcius_temp + 32, 1)
         print("{0}°C is equal to {1}°F.".format(celcius_temp, fahrenheit_temp))
     except (Exception):
         print("Invalid Input.")
